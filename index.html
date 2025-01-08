@@ -13,7 +13,7 @@
             padding: 20px;
             border: 2px solid #000;
             text-align: center;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow for the body */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         h1 {
             font-size: 2.5em;
@@ -22,16 +22,48 @@
         img {
             border: 2px solid #000;
             margin: 10px 0;
-            border-radius: 50%; /* Make the image round */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for the image */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
         .donation {
             margin-top: 20px;
         }
         .usdt {
             color: #0000ff;
-            word-wrap: break-word; /* Allow long addresses to wrap */
-            white-space: pre-wrap; /* Maintain whitespace and allow wrapping */
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+        .projects {
+            margin-top: 40px;
+            text-align: left;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            font-size: 1.5em;
+            text-decoration: underline;
+            margin: 10px 0;
+        }
+        .project p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        .resume-button {
+            margin-top: 30px;
+        }
+        .resume-button a {
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+        .resume-button a:hover {
+            background-color: #555;
         }
     </style>
 </head>
@@ -40,7 +72,27 @@
     <h1>Welcome to My Archive!</h1>
     <img src="image.png" alt="Your Avatar" width="150">
     
-    <p>Thank you for visiting my page. Here, you can find all my projects and updates for my released apps. I can remove them sometimes so just check my repos</p>
+    <p>Thank you for visiting my page. Here, you can find all my projects and updates for my released apps. I can remove them sometimes so just check my repos.</p>
+
+    <div class="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Shellman (currenlty)</h3>
+            <p>File manager for unix systems. Being a a CLI tool itself it has GUI like look and scrolling, elements implemented into it. Its goal to be used with tools like vim for productivity. </p>
+        </div>
+        <div class="project">
+            <h3>TheosGI (in process)</h3>
+            <p>GUI native app for Mac that makes theos build system better to use. </p>
+        </div>
+        <div class="project">
+            <h3>EXtractor_Anarchiver (archived)</h3>
+            <p>Anarchiver that supports lost of formats, also having features for anarchiving, alpha version looked usable. Being a GUI app for mac written in C++ and C with only native elements can be ported to linux ad windows at will.</p>
+        </div>
+    </div>
+
+    <div class="resume-button">
+        <a href="resume.html" target="_blank">View My Resume</a>
+    </div>
 
     <div class="donation">
         <h2>Support My Work</h2>
